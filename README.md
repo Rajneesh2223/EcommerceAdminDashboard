@@ -21,14 +21,18 @@ git clone https://github.com/Rajneesh2223/EcommerceAdminDashboard.git
 cd EcommerceAdminDashboard
 ```
 ### Install the dependencies
-sh
+
 Copy code
+```
 npm install
-Set up MongoDB
+```
+### Set up MongoDB
+
 Make sure you have MongoDB installed and running.
 Create a MongoDB database and note the connection string.
+
 Environment Variables
-Create a .env file in the root of your project and add the following environment variables:
+** Create a .env file in the root of your project and add the following environment variables: **
 
 env
 Copy code
