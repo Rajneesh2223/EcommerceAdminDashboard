@@ -32,24 +32,27 @@ Make sure you have MongoDB installed and running.
 Create a MongoDB database and note the connection string.
 
 Environment Variables
-** Create a .env file in the root of your project and add the following environment variables: **
+**Create a .env file in the root of your project and add the following environment variables:**
 
-env
-Copy code
+```
 MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<database>?retryWrites=true&w=majority
 GOOGLE_CLIENT_ID=<your-google-client-id>
 GOOGLE_CLIENT_SECRET=<your-google-client-secret>
 NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_SECRET=<your-next-auth-secret>
-Replace the placeholders with your actual MongoDB URI, Google OAuth credentials, and NextAuth secret.
+```
+_Replace the placeholders with your actual MongoDB URI, Google OAuth credentials, and NextAuth secret._
 
-Usage
-Start the development server
-sh
+
+### Start the development server
+
 Copy code
+```
 npm run dev
+```
 Open your browser and navigate to http://localhost:3000.
 
+```
 API Endpoints
 The application provides the following API endpoints:
 
