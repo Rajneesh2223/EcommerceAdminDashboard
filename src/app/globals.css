@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input, textarea {
+    @apply border-2 border-gray-300 rounded-md px-1 w-full mb-2;
+}
+
+input:focus, textarea:focus select:focus {
+    @apply border-blue-600; /* Ensure this class exists in Tailwind's configuration */
+}
+
+h1 {
+    @apply text-blue-900 mb-2 text-xl;
+}
+
+label {
+    @apply text-blue-900;
+}
+.btn-primary{
+    @apply bg-blue-900 text-white px-4 py-2 rounded-md;
+}
+table.basic {
+    @apply w-full;
+}
+
+table.basic thead tr td {
+    @apply bg-blue-100 font-bold text-left; /* Added font-bold and text-left for better table header appearance */
+}
+
+table.basic tr td {
+    @apply border border-blue-200 p-2; /* Increased padding for better spacing */
+}
+
+table.basic a {
+    @apply bg-blue-900 text-white text-sm py-1 px-2 rounded-md  inline-flex gap-1 mr-1; /* Adjusted padding and border radius */
+}
+
+.btn-default ,.btn-red{
+    @apply px-4 py-1 rounded-md
+}
+
+.btn-red{
+    @apply bg-red-800 text-white ;
+}
+
+.btn-default{
+    @apply bg-gray-300 text-white;
+}
