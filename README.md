@@ -20,7 +20,7 @@ This is an Ecommerce Admin Dashboard built with Next.js, MongoDB, and Google OAu
 git clone https://github.com/Rajneesh2223/EcommerceAdminDashboard.git
 cd EcommerceAdminDashboard
 
-Install the dependencies
+### Install the dependencies
 sh
 Copy code
 npm install
