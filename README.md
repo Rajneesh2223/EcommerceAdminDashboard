@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This is an Ecommerce Admin Dashboard built with Next.js, MongoDB, and Google OAuth for authentication. The application allows admins to manage products, categories, and other ecommerce-related data.
 
-## Getting Started
+Table of Contents
+Installation
+Environment Variables
+Usage
+API Endpoints
+Features
+Contributing
+License
 
-First, run the development server:
+## Clone the repository:
 
-```bash
+git clone https://github.com/Rajneesh2223/EcommerceAdminDashboard.git
+cd EcommerceAdminDashboard
+
+## Install the dependencies:
+npm install
+## Set up MongoDB:
+Make sure you have MongoDB installed and running.
+Create a MongoDB database and note the connection string.
+## Environment Variables
+Create a .env file and then put these information given below
+
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<database>?retryWrites=true&w=majority
+GOOGLE_CLIENT_ID=<your-google-client-id>
+GOOGLE_CLIENT_SECRET=<your-google-client-secret>
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=<your-next-auth-secret>
+
+Replace the placeholders with your actual MongoDB URI, Google OAuth credentials, and NextAuth secret.
+
+## Start the development server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application provides the following API endpoints:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+GET /api/products: Get all products.
+POST /api/products: Create a new product.
+PUT /api/products: Update an existing product.
+DELETE /api/products: Delete a product.
+GET /api/categories: Get all categories.
+POST /api/categories: Create a new category.
+PUT /api/categories: Update an existing category.
+DELETE /api/categories: Delete a category.
+POST /api/upload: Upload product images.
