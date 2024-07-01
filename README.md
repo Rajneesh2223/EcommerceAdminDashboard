@@ -1,20 +1,25 @@
-Ecommerce Admin Dashboard
+# Ecommerce Admin Dashboard
+
 This is an Ecommerce Admin Dashboard built with Next.js, MongoDB, and Google OAuth for authentication. The application allows admins to manage products, categories, and other ecommerce-related data.
 
-Table of Contents
-Installation
-Environment Variables
-Usage
-API Endpoints
-Features
-Contributing
-License
-Installation
-Clone the repository
-sh
-Copy code
+## Table of Contents
+
+- [Installation](#installation)
+- [Environment Variables](#environment-variables)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+### Clone the repository
+
+```sh
 git clone https://github.com/Rajneesh2223/EcommerceAdminDashboard.git
 cd EcommerceAdminDashboard
+
 Install the dependencies
 sh
 Copy code
